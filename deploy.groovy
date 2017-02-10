@@ -1,4 +1,4 @@
-job('Build') {
+job('Deploy') {
   logRotator {
     numToKeep(20)
   }
