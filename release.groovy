@@ -5,4 +5,7 @@ job('Release') {
   steps {
     shell('echo "hola mundo"')
   }
+  publishers {
+    buildPipelineTrigger('Deploy')
+  }
 }

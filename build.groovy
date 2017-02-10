@@ -6,6 +6,6 @@ job('Build') {
     shell('echo "hola mundo"')
   }
   publishers {
-    buildPipelineTrigger('Release')
+    downstream('Release')
   }
 }
